@@ -47,41 +47,20 @@ src/
 
 ---
 
-## Key Concepts in ShareLog
+## Learning Objectives
 
-### useRef
-
-Used to read and reset input fields directly in the form:
-
-```js
-const postTitleElement = useRef();
-const postBodyElement = useRef();
-useContext
-Accesses the shared post state (addPost, deletePost) globally without prop drilling.
-
-const { addPost } = useContext(PostList);
-useReducer
-Controls post list actions like ADD_POST and DELETE_POST using reducer logic.
-
-const postListReducer = (currPostList, action) => {
-  // reducer logic
-};
-Learning Objectives
 ShareLog was built to help understand:
 
-React architecture and component structure
+- React architecture and component structure
+- Context API and `useReducer`
+- Using `useRef` for efficient form control
+- Bootstrap-based styling
+- Hands-on JavaScript with React
 
-Context API and useReducer
+---
 
-Using useRef for efficient form control
+## Notes
 
-Bootstrap-based styling
-
-Hands-on JavaScript with React
-
-Notes
-Post data is not persisted (no database).
-
-This is a learning-only project.
-
-All actions (add/delete) work in-memory only.
+- Post data is not persisted (no database).
+- This is a learning-only project.
+- All actions (add/delete) work in-memory only.
